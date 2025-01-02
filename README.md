@@ -1,5 +1,5 @@
-# Nama Proyek
-Deskripsi singkat proyek Anda. Misalnya, "Website portfolio saya."
+# Testing Project
+Ini adalah website untuk testing
 
 ## Cara Menggunakan
 1. Clone repository ini.
