@@ -25,7 +25,9 @@
             </div>
             <div>
                 <p class="mb-0">STANDAR WAKTU INDONESIA</p>
-                <p class="mb-0 text-success">16:37:35 WIB | 16:37:35 UTC</p>
+                <p class="mb-0 text-success">
+                    <span id="time-wib">Loading WIB...</span> | <span id="time-utc">Loading UTC...</span>
+                </p>
             </div>
         </div>
     </header>
@@ -44,24 +46,12 @@
                 </div>
             </div>
             <!-- Tambahkan lebih banyak card -->
-            <!-- Card 2 -->
             <div class="col-md-4">
                 <div class="card">
                     <img src="map2.jpg" class="card-img-top" alt="Duff Moisture Code">
                     <div class="card-body">
                         <h5 class="card-title">Duff Moisture Code</h5>
                         <p class="card-text">Duff Moisture Code (DMC) menunjukkan tingkat kemudahan terjadinya kebakaran ditinjau...</p>
-                        <a href="#" class="btn btn-primary">Lihat Detail →</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="map3.jpg" class="card-img-top" alt="Drought Code">
-                    <div class="card-body">
-                        <h5 class="card-title">Drought Code</h5>
-                        <p class="card-text">Drought Code (DC) menunjukkan tingkat potensi kemudahan terjadinya kebakaran dari bahan organik...</p>
                         <a href="#" class="btn btn-primary">Lihat Detail →</a>
                     </div>
                 </div>
@@ -74,5 +64,23 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Realtime Clock Function
+        function updateClock() {
+            const now = new Date();
+
+            // Format time to HH:MM:SS
+            const timeWIB = now.toLocaleTimeString('id-ID', { timeZone: 'Asia/Jakarta' });
+            const timeUTC = now.toLocaleTimeString('en-GB', { timeZone: 'UTC' });
+
+            // Update the clock elements
+            document.getElementById('time-wib').textContent = timeWIB + ' WIB';
+            document.getElementById('time-utc').textContent = timeUTC + ' UTC';
+        }
+
+        // Run the clock update every second
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to set the time immediately
+    </script>
 </body>
 </html>
