@@ -1,99 +1,60 @@
-/* Global Styles */
+/* Reset and Global Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
     color: #333;
 }
 
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 1rem 0;
+.profile-container {
     text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    background: #333;
-    margin: 0;
-    padding: 0;
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #4CAF50;
+    margin-bottom: 1rem;
 }
 
-nav ul li {
-    margin: 0 1rem;
+.bio {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #555;
 }
 
-nav ul li a {
-    color: white;
+.social-buttons {
+    margin-top: 1.5rem;
+}
+
+.social-buttons .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-.project {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background: white;
-}
-
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background: white;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: #4CAF50;
     color: white;
-    border: none;
-    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
-form button:hover {
-    background: #45a049;
-}
+.linkedin { background: #0077b5; }
+.facebook { background: #4267B2; }
+.instagram { background: #E1306C; }
+.twitter { background: #1DA1F2; }
 
-footer {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.social-buttons .btn:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
 }
