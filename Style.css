@@ -1,60 +1,27 @@
-/* Reset and Global Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    background-color: #f8f9fa;
+}
+
+header h1 {
+    font-size: 1.25rem;
     color: #333;
 }
 
-.profile-container {
-    text-align: center;
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    max-width: 400px;
+header nav ul {
+    padding-left: 0;
 }
 
-.profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid #4CAF50;
-    margin-bottom: 1rem;
-}
-
-.bio {
-    font-size: 1rem;
-    margin: 1rem 0;
-    color: #555;
-}
-
-.social-buttons {
-    margin-top: 1.5rem;
-}
-
-.social-buttons .btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border-radius: 5px;
+header nav ul li a {
+    color: #007bff;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: transform 0.3s, background-color 0.3s;
 }
 
-.linkedin { background: #0077b5; }
-.facebook { background: #4267B2; }
-.instagram { background: #E1306C; }
-.twitter { background: #1DA1F2; }
+header nav ul li a:hover {
+    text-decoration: underline;
+}
 
-.social-buttons .btn:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
+.card img {
+    max-height: 200px;
+    object-fit: cover;
 }
