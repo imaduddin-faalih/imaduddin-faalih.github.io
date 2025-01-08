@@ -1,36 +1,236 @@
+/* RESET SEDERHANA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+  font-family: sans-serif;
+  color: #333;
 }
 
-header h1 {
-    font-size: 1.25rem;
-    color: #333;
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.logo {
+  height: 40px;
+  width: auto;
 }
 
-header nav ul {
-    padding-left: 0;
+/* Menu Desktop */
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #0073e6;
 }
 
-header nav ul li a {
-    color: #007bff;
-    text-decoration: none;
+/* Tombol Kanan */
+.nav-right {
+  display: flex;
+  gap: 1rem;
+}
+.nav-btn {
+  border: none;
+  background: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 9999px;
+  transition: background 0.3s;
+}
+.join-us:hover {
+  background: #f5f5f5;
+}
+.contact-us {
+  background: #0073e6;
+  color: #fff;
+}
+.contact-us:hover {
+  background: #005bb5;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+/* Toggle Mobile */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
-.card img {
-    max-height: 200px;
-    object-fit: cover;
+/* HERO */
+.hero {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fdfdfd;
+  padding: 3rem 1rem;
+  position: relative;
+}
+.hero-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.diamond {
+  width: 24px;
+  height: 24px;
+  background: #001f3f; /* Navy-ish */
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+.hidden-mobile {
+  display: none; /* default hidden di mobile */
+}
+.hero-text {
+  flex: 1;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  transition: 0.3s;
+}
+.primary-btn {
+  background: #0073e6;
+  color: #fff;
+}
+.primary-btn:hover {
+  background: #005bb5;
+}
+.outline-btn {
+  background: transparent;
+  color: #0073e6;
+  border: 2px solid #0073e6;
+}
+.outline-btn:hover {
+  background: #f0f8ff;
 }
 
-.gif-icon {
+/* MARQUEE SECTION */
+.marquee-section {
+  background: #fff;
+  padding: 2rem 0;
+}
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 220px; /* menyesuaikan tinggi gambar marquee */
+}
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  /* Supaya row nya sejajar horizontal */
+}
+.marquee-img {
+  width: 250px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+/* ANIMASI MARQUEE */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+.animate-marquee2 {
+  position: absolute;
+  top: 0;
+  animation: marquee 25s linear infinite;
+  animation-delay: 12.5s; /* half of 25s */
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .hidden-mobile {
+    display: inline-block;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  .hero-text p {
+    font-size: 1.125rem;
+  }
+
+  .nav-toggle {
+    display: none; /* Tersembunyi di desktop */
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-menu,
+  .nav-right {
+    display: none; /* Disembunyikan default di mobile, toggle pakai JS */
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #fff;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 50px; /* Atur ukuran sesuai kebutuhan */
-    height: auto;
-    z-index: 10; /* Pastikan berada di atas elemen lain */
+    top: 60px;
+    right: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .navbar {
+    position: relative;
+  }
+  .hero-wrapper {
+    flex-direction: column;
+  }
 }
