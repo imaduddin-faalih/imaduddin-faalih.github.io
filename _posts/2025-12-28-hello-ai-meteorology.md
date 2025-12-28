@@ -1,8 +1,8 @@
 ---
 title: "Hello: AI × Meteorology"
-categories: [notes]
-tags: [AI, meteorology]
+categories: [meteorology]
 ---
+
 
 This is my first post.
 
