@@ -1,7 +1,10 @@
+
 ---
 layout: home
-author_profile: false
 classes: wide
+author_profile: false
+---
+
 
 feature_row:
   - image_path: /assets/images/meteorology.png
