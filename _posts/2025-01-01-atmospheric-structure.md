@@ -1,6 +1,7 @@
 ---
 title: "Atmospheric Structure: Vertical Layers, Thermodynamics, and Stability"
 categories: [meteorology]
+layout: single
 tags:
   - atmosphere-structure
   - thermodynamics
