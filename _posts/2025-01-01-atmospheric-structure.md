@@ -2,6 +2,7 @@
 title: "Atmospheric Structure: Vertical Layers, Thermodynamics, and Stability"
 categories: [meteorology]
 layout: single
+mathjax: true
 tags:
   - atmosphere-structure
   - thermodynamics
@@ -34,20 +35,22 @@ The atmosphere is classically divided based on the **vertical temperature gradie
 
 Below is a **schematic representation derived from mean temperature profiles**, not artistic intuition.
 
+```text
 Temperature (K)
 ↑
-| Thermosphere
-| ↑ T increases
+|        Thermosphere
+|        ↑ T increases
 |
-| Mesosphere
-| ↓ T decreases
+|        Mesosphere
+|        ↓ T decreases
 |
-| Stratosphere
-| ↑ T inversion
+|        Stratosphere
+|        ↑ T inversion
 |
-| Troposphere
-| ↓ T lapse rate
+|        Troposphere
+|        ↓ T lapse rate
 +----------------------------→ Height
+
 
 
 This structure emerges from **radiative–convective equilibrium**, not arbitrary classification.
