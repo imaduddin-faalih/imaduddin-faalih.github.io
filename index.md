@@ -2,8 +2,6 @@
 layout: home
 classes: wide
 author_profile: false
----
-
 
 feature_row:
   - image_path: /assets/images/meteorology.png
@@ -33,4 +31,3 @@ Welcome to **AI × Meteorology**.
 This site contains technical discussions on atmospheric science, machine learning, and their intersection.
 
 {% include feature_row %}
-
