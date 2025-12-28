@@ -13,5 +13,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-include-cache
+
 
 minimal_mistakes_skin: "default"
