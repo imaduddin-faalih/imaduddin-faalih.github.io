@@ -51,7 +51,7 @@ Temperature (K)
 |        ↓ T lapse rate
 +----------------------------→ Height
 
-
+```  
 
 This structure emerges from **radiative–convective equilibrium**, not arbitrary classification.
 
