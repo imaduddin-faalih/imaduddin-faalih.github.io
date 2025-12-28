@@ -1,10 +1,18 @@
-/* Homepage only: make layout feel more full-width */
-.landing .page__inner-wrap {
-  max-width: 1600px;        /* wider container */
-  padding-left: 0.5rem;     /* reduce side padding */
-  padding-right: 0.5rem;
+/* Homepage only: truly widen the main content wrapper */
+.landing .initial-content,
+.landing .page,
+.landing .archive,
+.landing .page__inner-wrap,
+.landing .feature__wrapper {
+  max-width: 1700px !important;
+  width: 100% !important;
 }
 
-.landing .archive {
-  max-width: 1600px;        /* ensures cards/rows also expand */
+/* Reduce side padding so it feels more "to the left/right" */
+.landing .initial-content,
+.landing .page__inner-wrap {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
