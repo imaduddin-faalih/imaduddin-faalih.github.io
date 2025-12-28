@@ -65,20 +65,17 @@ $$
 \frac{\partial p}{\partial z} = -\rho g
 $$
 
-
 Combining with the ideal gas law:
 
 $$
 p = \rho R T
 $$
 
-
 gives the **hypsometric equation**, which allows vertical spacing between pressure levels to be computed from temperature:
 
 $$
 z_2 - z_1 = \frac{R \bar{T}}{g} \ln\left(\frac{p_1}{p_2}\right)
 $$
-
 
 This is why:
 - warmer columns are **thicker**
@@ -95,7 +92,6 @@ $$
 z_2 - z_1 = \frac{R \bar{T}}{g}
 \ln\left(\frac{p_1}{p_2}\right)
 $$
-
 
 ### Reference Lapse Rates
 - **Dry adiabatic**: 9.8 K km⁻¹  
