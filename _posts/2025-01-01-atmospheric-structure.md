@@ -60,9 +60,9 @@ This structure emerges from **radiative–convective equilibrium**, not arbitrar
 
 At large scales, the atmosphere satisfies **hydrostatic balance**:
 
-$$
+$
 \frac{\partial p}{\partial z} = -\rho g
-$$
+$
 
 Combining with the ideal gas law:
 
