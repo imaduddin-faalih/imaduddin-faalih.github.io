@@ -1,6 +1,7 @@
 ---
 layout: home
 author_profile: true
+classes: wide
 
 feature_row:
   - image_path: /assets/images/meteorology.png
