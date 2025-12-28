@@ -75,9 +75,9 @@ $$
 
 gives the **hypsometric equation**, which allows vertical spacing between pressure levels to be computed from temperature:
 
-\[
+$$
 z_2 - z_1 = \frac{R \bar{T}}{g} \ln\left(\frac{p_1}{p_2}\right)
-\]
+$$
 
 This is why:
 - warmer columns are **thicker**
@@ -112,13 +112,13 @@ These regimes determine whether vertical motion is **suppressed or amplified**.
 
 Static stability can be quantified by the **Brunt–Väisälä frequency**:
 
-\[
+$$
 N^2 = \frac{g}{\theta} \frac{∂\theta}{∂z}
-\]
+$$
 
-- \(N^2 > 0\): stable stratification  
-- \(N^2 ≈ 0\): neutral  
-- \(N^2 < 0\): convectively unstable  
+- $$\(N^2 > 0\)$$: stable stratification  
+- $$\(N^2 ≈ 0\)$$: neutral  
+- $$\(N^2 < 0\)$$: convectively unstable  
 
 This quantity is **directly computed from soundings or reanalysis**, not inferred.
 
