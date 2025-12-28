@@ -79,6 +79,7 @@ $$
 z_2 - z_1 = \frac{R \bar{T}}{g} \ln\left(\frac{p_1}{p_2}\right)
 $$
 
+
 This is why:
 - warmer columns are **thicker**
 - temperature biases in reanalysis directly affect geopotential height fields
@@ -89,6 +90,7 @@ This is why:
 
 ### Environmental Lapse Rate (ELR)
 Observed vertical temperature gradient:
+
 $$
 z_2 - z_1 = \frac{R \bar{T}}{g}
 \ln\left(\frac{p_1}{p_2}\right)
