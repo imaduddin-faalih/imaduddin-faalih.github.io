@@ -1,4 +1,3 @@
-
 ---
 layout: home
 classes: wide
