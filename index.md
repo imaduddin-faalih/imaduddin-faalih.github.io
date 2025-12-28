@@ -1,6 +1,6 @@
 ---
 layout: home
-classes: wide
+classes: wide landing
 author_profile: false
 
 feature_row:
