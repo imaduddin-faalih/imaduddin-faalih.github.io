@@ -1,0 +1,15 @@
+title: "AI × Meteorology"
+description: "Technical discussions on AI, atmospheric science, and extreme rainfall"
+theme: minimal-mistakes-jekyll
+
+url: "https://imaduddin-faalih.github.io"
+baseurl: ""
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minimal_mistakes_skin: "default"
