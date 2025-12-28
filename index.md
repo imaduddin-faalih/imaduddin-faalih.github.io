@@ -1,15 +1,6 @@
 ---
 layout: home
 author_profile: true
----
-
-Welcome to **AI × Meteorology**.
-
-This site contains technical discussions on atmospheric science, machine learning, and their intersection.
-
----
-
-{% feature_row %}
 
 feature_row:
   - image_path: /assets/images/meteorology.png
@@ -32,3 +23,10 @@ feature_row:
     url: /ai-for-meteorology/
     btn_label: "Explore"
     btn_class: "btn--primary"
+---
+
+Welcome to **AI × Meteorology**.
+
+This site contains technical discussions on atmospheric science, machine learning, and their intersection.
+
+{% feature_row %}
